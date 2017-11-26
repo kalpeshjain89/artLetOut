@@ -17,3 +17,6 @@ Forgot Password: http://artletout.com/Account/forgotpassword
 Bootstrap reference:
 http://getbootstrap.com/docs/3.3/css/
 http://getbootstrap.com/docs/3.3/examples/theme/
+
+Sticky Footer reference:
+http://getbootstrap.com/docs/3.3/examples/sticky-footer-navbar/
