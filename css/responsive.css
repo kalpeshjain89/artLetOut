@@ -1,61 +1,31 @@
 /* CSS for Mobile Devices */
 @media all and (min-width: 320px) and (max-width : 767px) {
+    
+    .content{padding:20px 0;}
+    
+    .mobileMarginT10{margin-top:10px;}
+    .mobileMarginT15{margin-top:15px;}
+    .mobileMarginT20{margin-top:20px;}
+    
+    footer{position: relative;}
         
-    .content{padding:10px 0 90px;}
+    .socialIconsWrapper{margin:0 auto 10px; text-align:center;}
     
-    footer{padding:6px 0;}
-    
-    .imgSlider{width:100%;}
-    
-    .imgSlider img{max-height:initial;}
-    
-    .bubbles{bottom:0;}
-    
-    /* CSS Contact Us Page */
-    #contactUsPage footer{position: relative;}
-    
-    .location{
-        width:100%;
-        margin:0 auto;
-    }
-    
-    .address{
-        float:none;
-        width:100%;          
-    }
-    
-    .contactUs{
-        float:none;
-        width:100%;
-        margin-left:0;
+    .socialIconsWrapper > p {
         margin-top:20px;
     }
     
-    .copyright, .socialiconWrapper{
-        float:none;
-        margin-top:0;
-    }
+    .socialIcons li + li{margin-left:12px;}
 }
 
 /* CSS for Tablets Portrait Mode */ 
 @media all and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {    
     
-    .address{width:250px;}
     
-    .contactUs{
-        float:none;
-        width:auto;
-        margin-left:270px;
-    }
 }
 
 /* CSS for Galaxy Tablets Landscape Mode */ 
 @media all and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) { 
         
-    .address{width:25%;}
     
-    .contactUs{
-        width:72%;
-        margin-left:3%;
-    }
 }

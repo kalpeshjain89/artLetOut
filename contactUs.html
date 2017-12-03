@@ -1,16 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Home - Art Let Out</title>
+        <title>Contact Us - Art Let Out</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />        
     </head>
-    <body>
+    <body class="contactUsPage">
         <header>
-            <a href="#content" class="sr-only">Skip to main content</a>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,8 +28,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="signUp.html">Sign Up</a></li>
-                                    <li><a href="signIn.html">Sign In</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Sign In</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -38,24 +37,65 @@
                 </div>
             </nav>
         </header>
-        <div class="content" role='main' id="content">
-            <h1 class="sr-only">Home page</h1>
+        <div class="content" role='main'>
+            <h1 class="sr-only">Contact Us page</h1>
             <div class="container">
-                <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
-                        </div>
-                        <div class="item">
-                            <img src='./images/banner2.jpg' data-holder-rendered="true">
-                        </div>
-                        <div class="item">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
+                <div class='row'>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>Contact Us</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class='row'>
+                                    <div class='col-md-12'>
+                                        <div class="mapWrapper marginB20">
+                                            <h3 class="title">Locate Us on map</h3>                                        
+                                            <div id="googleMap" class="map"></div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <div class='row'>
+                                    <div class='col-md-3'>
+                                        <div class="addressWrapper">
+                                            <h3 class="title">Our Address</h3>                                        
+                                            <address class="marginL10">
+                                                <strong class="font16px">Art Let Out</strong><br/>
+                                                One Microsoft Way,<br/>
+                                                Redmond, WA 98052-6399,<br/>
+                                                Goregaon,<br/>
+                                                Mumbai 400 097
+                                                <div class="marginT10">Mobile: <a href="tel:+91 9999999999" title="Call Us on our mobile number">+91 9999999999</a></div>
+                                                <div>Email: <a title="Wrtie to Us on Email" href="#">artlettout@gmail.com</a></div>
+                                            </address>
+                                        </div>
+                                    </div> 
+                                    <div class='col-md-9'>
+                                        <div class="contactUsForm">
+                                            <h3 class="title">Write to Us</h3>                                        
+                                            <form id="contactUsForm">
+                                                <div class="form-group">
+                                                    <label for="nameId">*Name</label>
+                                                    <input id="nameId" name="nameId" type="text" placeholder="Please enter name" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="mobileNumber">*Mobile Number</label>
+                                                    <input id="mobileNumber" name="mobileNumber" type="tel" placeholder="Please enter mobile number" maxlength="10" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="emailId">*Email ID</label>
+                                                    <input id="emailId" name="emailId" type="email" placeholder="Please enter email id" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="messageId">*Message</label>
+                                                    <textarea id="messageId" name="messageId" placeholder="Please enter the message" class="form-control"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-lg btn-primary">Send Message</button>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,11 +155,12 @@
                 </div>
             </div>
         </footer> 
+        <script xsrc="//maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyDMhHi-aKOMtzLJ07pSGLDtHWwgQyA3I8A" type="text/javascript"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script>
             $(document).ready(function () {
-                $('.carousel').carousel();
+                
             });
         </script>
     </body>

@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home - Art Let Out</title>
+        <title>About Art Library - Art Let Out</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/bootstrap.css" />
@@ -29,8 +29,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="signUp.html">Sign Up</a></li>
-                                    <li><a href="signIn.html">Sign In</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Sign In</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -38,24 +38,49 @@
                 </div>
             </nav>
         </header>
-        <div class="content" role='main' id="content">
-            <h1 class="sr-only">Home page</h1>
+        <div class="content" role='main' id="content">             
             <div class="container">
-                <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
+                <div class="row">
+                    <div class="col-md-12 marginB20">
+                        <h1>About Art Library</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>Plan 1 (10K)</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div>2 Rotations for 4 Months with 3 Arts 5% Tariff plan</div>
+                                <div class="clearfix marginT10">
+                                    <button type="button" class="btn btn-default pull-right">Get Plan</button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h2>Plan 2 (25K)</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div>3 Rotations for 6 Months with 6 Arts 5% Tariff plan</div>
+                                <div class="clearfix marginT10">
+                                    <button type="button" class="btn btn-success pull-right">Get Plan</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <img src='./images/banner2.jpg' data-holder-rendered="true">
-                        </div>
-                        <div class="item">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2>Plan 3 (45K)</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div>5 Rotations for 12 Months with 10 Arts 5% Tariff plan</div>
+                                <div class="clearfix marginT10">
+                                    <button type="button" class="btn btn-primary pull-right">Get Plan</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +144,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script>
             $(document).ready(function () {
-                $('.carousel').carousel();
+
             });
         </script>
     </body>

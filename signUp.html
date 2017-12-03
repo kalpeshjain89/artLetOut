@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Home - Art Let Out</title>
+        <title>Sign Up - Art Let Out</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/bootstrap.css" />
@@ -10,7 +10,6 @@
     </head>
     <body>
         <header>
-            <a href="#content" class="sr-only">Skip to main content</a>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,24 +37,72 @@
                 </div>
             </nav>
         </header>
-        <div class="content" role='main' id="content">
-            <h1 class="sr-only">Home page</h1>
+        <div class="content" role='main'>
+            <h1 class="sr-only">Sign Up page</h1>
             <div class="container">
-                <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                        <li data-target="#bannerCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
-                        </div>
-                        <div class="item">
-                            <img src='./images/banner2.jpg' data-holder-rendered="true">
-                        </div>
-                        <div class="item">
-                            <img src='./images/banner1.jpg' data-holder-rendered="true">
+                <div class='row'>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>Create a New Account</h2>
+                            </div>
+                            <div class="panel-body">
+                                <form id="signUpForm" class="signUpForm">
+                                    <div class='row'>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="firstName">*First Name</label>
+                                                <input id="firstName" name="firstName" type="text" placeholder="Please enter first name" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="lastName">*Last Name</label>
+                                                <input id="lastName" name="lastName" type="text" placeholder="Please enter last name" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="mobileNumber">*Mobile Number</label>
+                                                <input id="mobileNumber" name="mobileNumber" type="tel" placeholder="Please enter mobile number" maxlength="10" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="emailId">*Email ID</label>
+                                                <input id="emailId" name="emailId" type="email" placeholder="Please enter email id" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="newPassword">*Create Password</label>
+                                                <input id="newPassword" name="newPassword" type="password" placeholder="Please enter password" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class='col-md-4'>
+                                            <div class="form-group">
+                                                <label for="confirmPassword">*Confirm Password</label>
+                                                <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Please confirm password" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-md-4'>
+                                            <button type="submit" class="btn btn-lg btn-success">Sign Up</button>
+                                        </div>
+                                    </div> 
+                                    <div class='row'>
+                                        <div class="col-md-4 clearfix marginT20">
+                                            <a href="signIn.html" class="pull-left">Existing User? Sign In</a> 
+                                            <a href="forgotPassword.html" class="pull-right">Forgot Password?</a>
+                                        </div>
+                                    </div>                                     
+                                </form>                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +166,7 @@
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script>
             $(document).ready(function () {
-                $('.carousel').carousel();
+
             });
         </script>
     </body>

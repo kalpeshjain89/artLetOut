@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Shop Art - Art Let Out</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggleNavigation" aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Art Let Out</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="toggleNavigation">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="aboutUs.html">About</a></li>
+                            <li><a href="shopArt.html">Shop Art</a></li>
+                            <li><a href="cart.html">Cart <strong>(0)</strong></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="signUp.html">Sign Up</a></li>
+                                    <li><a href="signIn.html">Sign In</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content" role='main'>
+            <h1 class="sr-only">Art shopping page</h1>
+            <div class="container">
+                <div class='row'>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>Art Shopping</h2>
+                            </div>
+                            <div class="panel-body">
+                                <div class='row'>
+                                    <div class='col-md-2'>
+                                        <h3><span class="label label-default">Filter Search by</span></h3>
+                                    </div>
+                                    <div class='col-md-10'>
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <select class="form-control" aria-label="Medium">
+                                                    <option value="0">Select Medium</option>
+                                                    <option value="1">Acrylic on canvas</option>
+                                                    <option value="2">Oil on Canvas</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" aria-label="Artist">
+                                                    <option value="1">Digambar S Chichkar</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control" aria-label="Price">
+                                                    <option value="0">Select Price</option>
+                                                    <option value="25000">0 to 25000</option>
+                                                    <option value="50000">25001 to 50000</option>
+                                                    <option value="100000">50001 to 100000</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-sm btn-primary">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row marginT20">
+                                    <div class="col-md-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading text-center">
+                                                <h4>Dream</h4>
+                                            </div>
+                                            <div class="panel-body">                                           
+                                                <div>
+                                                    <a href="artDetails.html">
+                                                        <img src="./images/art1.jpg" alt="Art 1" style="width: 200px; height: 200px;" />
+                                                    </a>
+                                                </div> 
+                                                <div class="text-center">
+                                                    <span class="block font16px marginT5">36x58</span>
+                                                    <span class="label label-info">Art By  Digambar S Chichkar</span>
+                                                    <div class="marginT5">
+                                                        <span class=" block price">Rs. 60000/-</span>
+                                                        <span class="rent">Rs. 0/- rent/month</span>
+                                                    </div>
+                                                    <button type="button" class="btn btn-xs btn-success marginT10">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading text-center">
+                                                <h4>Contentment</h4>
+                                            </div>
+                                            <div class="panel-body">                                           
+                                                <div>
+                                                    <a href="artDetails.html">
+                                                        <img src="./images/art2.jpg" alt="Art 2" style="width: 200px; height: 200px;" />
+                                                    </a>
+                                                </div> 
+                                                <div class="text-center">
+                                                    <span class="block font16px marginT5">36x58</span>
+                                                    <span class="label label-info">Art By  Digambar S Chichkar</span>
+                                                    <div class="marginT5">
+                                                        <span class=" block price">Rs. 60000/-</span>
+                                                        <span class="rent">Rs. 0/- rent/month</span>
+                                                    </div>
+                                                    <button type="button" class="btn btn-xs btn-success marginT10">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading text-center">
+                                                <h4>Buddha</h4>
+                                            </div>
+                                            <div class="panel-body">                                           
+                                                <div>
+                                                    <a href="artDetails.html">
+                                                        <img src="./images/art3.jpg" alt="Art 3" style="width: 200px; height: 200px;" />
+                                                    </a>
+                                                </div> 
+                                                <div class="text-center">
+                                                    <span class="block font16px marginT5">36x58</span>
+                                                    <span class="label label-info">Art By  Digambar S Chichkar</span>
+                                                    <div class="marginT5">
+                                                        <span class=" block price">Rs. 60000/-</span>
+                                                        <span class="rent">Rs. 0/- rent/month</span>
+                                                    </div>
+                                                    <button type="button" class="btn btn-xs btn-success marginT10">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading text-center">
+                                                <h4>Arpan</h4>
+                                            </div>
+                                            <div class="panel-body">                                           
+                                                <div>
+                                                    <a href="artDetails.html">
+                                                        <img src="./images/art4.jpg" alt="Art 4" style="width: 200px; height: 200px;" />
+                                                    </a>
+                                                </div> 
+                                                <div class="text-center">
+                                                    <span class="block font16px marginT5">36x58</span>
+                                                    <span class="label label-info">Art By  Digambar S Chichkar</span>
+                                                    <div class="marginT5">
+                                                        <span class=" block price">Rs. 60000/-</span>
+                                                        <span class="rent">Rs. 0/- rent/month</span>
+                                                    </div>
+                                                    <button type="button" class="btn btn-xs btn-success marginT10">Add to Cart</button>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class='row'>
+                        <div class="col-xs-6 col-sm-3 col-md-3">
+                            <div><a href="aboutUs.html">About Us</a></div>
+                            <div class='marginT5'><a href="aboutArtLibrary.html">About Art Library</a></div>
+                            <div class='marginT5'><a href="contactUs.html">Contact Us</a></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3">                        
+                            <div><a href="privacyPolicy.html">Privacy Policy</a></div>
+                            <div class='marginT5'><a href="termsConditions.html">Terms &amp; Conditions</a></div>  
+                            <div class='marginT5'><a href="sitemap.html">Site Map</a></div>  
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 socialIconsWrapper">
+                            <p><strong>Connect with us:</strong></p>
+                            <ul class='socialIcons clearfix'>
+                                <li>
+                                    <a href="#" title="Connect with Us on Facebook">
+                                        <img src='./images/icons/facebook.png' alt='Facebook' />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow Us on Instagram">
+                                        <img src='./images/icons/instagram.png' alt='Instagram' />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow Us on Pinterest">
+                                        <img src='./images/icons/pinterest.png' alt='Pinterest' />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Connect with Us on LinkedIn">
+                                        <img src='./images/icons/linkedin.png' alt='LinkedIn' />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow Us on Twitter">
+                                        <img src='./images/icons/twitter.png' alt='Twitter' />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Subscribe Us on YouTube">
+                                        <img src='./images/icons/youtube.png' alt='YouTube' />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-12">&#169; Art Let Out Pvt. Ltd. All rights reserved.</div>
+                    </div>
+                </div>
+            </footer> 
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+            <script>
+                $(document).ready(function () {
+
+                });
+            </script>
+    </body>
+</html>
