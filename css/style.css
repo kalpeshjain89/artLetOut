@@ -108,6 +108,30 @@ table caption {
     font-size:16px;
 }
 
+.artBrickWrapper .panel-heading h4{
+    font-size:20px;
+    margin:0;
+}
+
+.artBrickWrapper .artBrick .panel-body a{display:inline-block;}
+
+.artBrickWrapper .artBrick .panel-body img{
+    width:200px;
+    height:200px;
+}
+
+.artBrickWrapper .artBrick .artDetails .artSize{
+    margin-top:5px;
+    font-size:16px;
+}
+
+.artDetailsPage .artDetails li{
+    float:left;
+    width: 50%;
+}
+
+.artDetailsContent button + button{margin-left:30px;}
+
 .termConditionsWrapper{
     list-style: disc;
     margin-left:15px;

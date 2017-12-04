@@ -8,7 +8,11 @@
     .mobileMarginT20{margin-top:20px;}
     
     footer{position: relative;}
-        
+    
+    .artBrickWrapper .col-md-3 + .col-md-3{margin-top:20px;}
+
+    .artDetailsContent .artTitle{margin-top:15px;}
+    
     .socialIconsWrapper{margin:0 auto 10px; text-align:center;}
     
     .socialIconsWrapper > p {
