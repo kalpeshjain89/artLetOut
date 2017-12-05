@@ -86,6 +86,7 @@ textarea{
 /* Common CSS Start */
 .marginL10{margin-left:10px;}
 .marginT10{margin-top:10px;}
+.marginT15{margin-top:15px;}
 .marginT20{margin-top:20px;}
 .marginT5{margin-top:5px;}
 .marginB15{margin-bottom:15px;}
@@ -125,7 +126,17 @@ table caption {
     font-size:16px;
 }
 
-.artDetailsPage .artDetails li{
+.artDetailsPage .artTitle .label{
+    display:block;
+    padding:.2em .6em .2em;
+}
+
+.artDetailsPage .artImage{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.artDetailsPage .artInfo li{
     float:left;
     width: 50%;
 }
