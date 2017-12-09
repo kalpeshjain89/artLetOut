@@ -86,6 +86,9 @@
                                                                     <button class="btn btn-success" type="button">+</button>
                                                                 </span>
                                                             </div>
+                                                            <div class="marginT5">
+                                                                <a href="#">Remove</a>
+                                                            </div>
                                                         </td>
                                                         <td>Rs. 55000/-</td>
                                                     </tr>
@@ -112,6 +115,9 @@
                                                                     <button class="btn btn-success" type="button">+</button>
                                                                 </span>
                                                             </div>
+                                                            <div class="marginT5">
+                                                                <a href="#">Remove</a>
+                                                            </div>
                                                         </td>
                                                         <td>Rs. 55000/-</td>
                                                     </tr>
@@ -129,7 +135,7 @@
                                             </table>
                                             <div class="pull-right marginT15">
                                                 <button type="button" class="btn btn-default">Continue Shopping</button>
-                                                <button type="button" class="btn btn-success marginL10">Place Order</button>
+                                                <button type="button" class="btn btn-success marginL10" onclick="location.href='confirmOrder.html'">Place Order</button>
                                             </div>
                                         </div>
                                     </div>                                    
@@ -158,6 +164,9 @@
                                                         <button class="btn btn-success" type="button">+</button>
                                                     </span>
                                                 </div>
+                                                <div class="text-center">
+                                                    <a href="#">Remove</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -182,16 +191,19 @@
                                                         <button class="btn btn-success" type="button">+</button>
                                                     </span>
                                                 </div>
+                                                <div class="text-center">
+                                                    <a href="#">Remove</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row marginT15">                                        
                                         <div class="col-xs-12 text-center">
                                             <button type="button" class="btn btn-default">Continue Shopping</button>
-                                            <button type="button" class="btn btn-success marginT5">Place Order</button>
+                                            <button type="button" class="btn btn-success marginT5" onclick="location.href='confirmOrder.html'">Place Order</button>
                                         </div>
                                     </div> 
-                                </div>
+                                </div>1
                             </div>
                         </div>
                     </div> 
@@ -273,7 +285,7 @@
                 $input = $('input[type="text"]');
                 $('.btn').on('click', function () {
                     $val = $input.val();
-                    if ($(this).hasClass('btn-minuse')) {
+                    if ($(this).hasClass('btn-danger')) {
                         $input.val(parseInt($val) - 1);
                     } else {
                         $input.val(parseInt($val) + 1);

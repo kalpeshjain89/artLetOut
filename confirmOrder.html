@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Confirm Order - Art Let Out</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />        
+    </head>
+    <body class="confirmOrderPage">
+        <header>
+            <a href="#content" class="sr-only">Skip to main content</a>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggleNavigation" aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Art Let Out</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="toggleNavigation">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="aboutUs.html">About</a></li>
+                            <li><a href="shopArt.html">Shop Art</a></li>
+                            <li><a href="cart.html">Cart <strong>(0)</strong></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Sign In</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content" role='main' id="content">             
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 marginB15">                        
+                        <h1>Confirm your order</h1>
+                    </div>
+                    <div class="col-md-12">                        
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h1>
+                                    <a data-toggle="collapse" href="#addressPanel" class="collapsed">Delivery Address</a>
+                                </h1>
+                            </div>
+                            <div id="addressPanel" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="clearfix addressDetails">
+                                                <li class="pull-left"><strong>Name:</strong></li>
+                                                <li class="pull-left"><strong>Madhu Gone</strong></li>
+                                                <li class="pull-left"><strong>Building:</strong></li>
+                                                <li class="pull-left">Sai Samruddhi Building, C-23,</li>
+                                                <li class="pull-left"><strong>Landmark:</strong></li>
+                                                <li class="pull-left">Near Worli Police Station,</li>
+                                                <li class="pull-left"><strong>City:</strong></li>
+                                                <li class="pull-left">Mumbai</li>
+                                                <li class="pull-left"><strong>Pincode:</strong></li>
+                                                <li class="pull-left">400 003</li>
+                                                <li class="pull-left"><strong>State:</strong></li>
+                                                <li class="pull-left">Maharashtra</li>
+                                                <li class="pull-left"><strong>Contact Number:</strong></li>
+                                                <li class="pull-left">+91 1234567889</li>
+                                                <li class="pull-left"><strong>Email:</strong></li>
+                                                <li class="pull-left">madhu.gone@gmail.com</li>
+                                            </ul>                                                
+                                        </div>
+                                        <div class="col-md-12 marginT15">                        
+                                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAddressModal">Add New Address</button>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary marginT15">
+                            <div class="panel-heading">
+                                <h1>
+                                    <a data-toggle="collapse" href="#orderSummaryPanel">Order Summary</a>
+                                </h1>
+                            </div>
+                            <div id="orderSummaryPanel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class='cartDesktop hidden-xs'> 
+                                        <div class="row">
+                                            <div class="col-md-12 clearfix">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Art Work</th>
+                                                            <th>Art Details</th>
+                                                            <th>Purchase Type</th>
+                                                            <th>Discount</th>
+                                                            <th>Tariff</th>
+                                                            <th>Quantity</th>
+                                                            <th>Price</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <img src="./images/art1.jpg" alt="Art 1" />
+                                                            </th>
+                                                            <td>
+                                                                <strong class="font16px visible-sm-block visible-md-block visible-lg-block">Contentment</strong>
+                                                                <span class="visible-sm-block visible-md-block visible-lg-block marginT5">-Digambar S Chichkar</span>
+                                                                <span class="visible-sm-block visible-md-block visible-lg-block marginT5">(Acrylic on Canvas)</span>
+                                                                <span class=" font16px visible-sm-block visible-md-block visible-lg-block marginT5">33x45</span>
+                                                            </td>
+                                                            <td>Buy</td>
+                                                            <td>NA</td>
+                                                            <td>NA</td>
+                                                            <td>1</td>
+                                                            <td>Rs. 55000/-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <img src="./images/art2.jpg" alt="Art 2" />
+                                                            </th>
+                                                            <td>
+                                                                <strong class="font16px visible-sm-block visible-md-block visible-lg-block">Contentment</strong>
+                                                                <span class="visible-sm-block visible-md-block visible-lg-block marginT5">-Digambar S Chichkar</span>
+                                                                <span class="visible-sm-block visible-md-block visible-lg-block marginT5">(Acrylic on Canvas)</span>
+                                                                <span class=" font16px visible-sm-block visible-md-block visible-lg-block marginT5">33x45</span>
+                                                            </td>
+                                                            <td>Buy</td>
+                                                            <td>NA</td>
+                                                            <td>NA</td>
+                                                            <td>1</td>
+                                                            <td>Rs. 55000/-</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="6" class="text-right">
+                                                                <strong>Grand Total</strong>
+                                                            </td>
+                                                            <td>
+                                                                <strong>Rs. 105000/-</strong>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <div class="cartMobile visible-xs-block clearfix">
+                                        <div class="cartItems">
+                                            <div class="row">
+                                                <div class="col-xs-8">
+                                                    <strong class="font16px visible-xs-block">Contentment</strong>
+                                                    <span class="visible-xs-block marginT5">-Digambar S Chichkar</span>
+                                                    <span class="visible-xs-block marginT5">(Acrylic on Canvas)</span>
+                                                    <span class="font16px visible-xs-block marginT5">33x45</span>
+                                                    <span class="visible-xs-block marginT5">Purchase Type: Buy</span>
+                                                    <span class="visible-xs-block marginT5">Discount: NA</span>
+                                                    <span class="visible-xs-block marginT5">Tariff: NA</span>
+                                                    <span class="font16px visible-xs-block marginT5"><strong>Price: Rs. 55000/-</strong></span>
+                                                </div>
+                                                <div class="col-xs-4 clearfix">                                                
+                                                    <img src="./images/art1.jpg" alt="Art 1" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8">
+                                                    <strong class="font16px visible-xs-block">Contentment</strong>
+                                                    <span class="visible-xs-block marginT5">-Digambar S Chichkar</span>
+                                                    <span class="visible-xs-block marginT5">(Acrylic on Canvas)</span>
+                                                    <span class="font16px visible-xs-block marginT5">33x45</span>
+                                                    <span class="visible-xs-block marginT5">Purchase Type: Buy</span>
+                                                    <span class="visible-xs-block marginT5">Discount: NA</span>
+                                                    <span class="visible-xs-block marginT5">Tariff: NA</span>
+                                                    <span class="font16px visible-xs-block marginT5"><strong>Price: Rs. 55000/-</strong></span>
+                                                </div>
+                                                <div class="col-xs-4 clearfix">                                                
+                                                    <img src="./images/art2.jpg" alt="Art 2" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary marginT15">
+                            <div class="panel-heading">
+                                <h1>
+                                    <a data-toggle="collapse" href="#paymentPanel">Payment Details</a>
+                                </h1>
+                            </div>
+                            <div id="paymentPanel" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div>Cash on Delivery (COD)</div>
+                                    <div class="marginT15">
+                                        <button class="btn btn-success" type="button">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-12 hidden">                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1>Your Cart is empty!</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class='row'>                                    
+                                    <div class="col-md-12">                                        
+                                        <div>Visit our <a href="index.html">home page</a> to continue shopping.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class='row'>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div><a href="aboutUs.html">About Us</a></div>
+                        <div class='marginT5'><a href="aboutArtLibrary.html">About Art Library</a></div>
+                        <div class='marginT5'><a href="contactUs.html">Contact Us</a></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">                        
+                        <div><a href="privacyPolicy.html">Privacy Policy</a></div>
+                        <div class='marginT5'><a href="termsConditions.html">Terms &amp; Conditions</a></div>  
+                        <div class='marginT5'><a href="sitemap.html">Site Map</a></div>  
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 socialIconsWrapper">
+                        <p><strong>Connect with us:</strong></p>
+                        <ul class='socialIcons clearfix'>
+                            <li>
+                                <a href="#" title="Connect with Us on Facebook">
+                                    <img src='./images/icons/facebook.png' alt='Facebook' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow Us on Instagram">
+                                    <img src='./images/icons/instagram.png' alt='Instagram' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow Us on Pinterest">
+                                    <img src='./images/icons/pinterest.png' alt='Pinterest' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Connect with Us on LinkedIn">
+                                    <img src='./images/icons/linkedin.png' alt='LinkedIn' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Follow Us on Twitter">
+                                    <img src='./images/icons/twitter.png' alt='Twitter' />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Subscribe Us on YouTube">
+                                    <img src='./images/icons/youtube.png' alt='YouTube' />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col-lg-12">&#169; Art Let Out Pvt. Ltd. All rights reserved.</div>
+                </div>
+            </div>
+        </footer> 
+        <!-- Add another Address Modal -->
+        <div class="modal fade" id="addAddressModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalTitle">Add New Address</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addNewAddressForm" class="signUpForm">
+                            <div class='row'>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="name">*Name</label>
+                                        <input id="name" name="name" type="text" placeholder="Please enter name" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="address">*Address</label>
+                                        <input id="address" name="address" type="text" placeholder="Please enter address" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="landmark">*Landmark</label>
+                                        <input id="landmark" name="landmark" type="text" placeholder="Please enter landmark" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="pincode">*Pincode</label>
+                                        <input id="pincode" name="pincode" type="tel" placeholder="Please confirm pincode" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="city">*City</label>
+                                        <input id="city" name="city" type="text" placeholder="Please enter city" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="state">*State</label>
+                                        <input id="state" name="state" type="text" placeholder="Please confirm state" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="mobileNumber">*Mobile Number</label>
+                                        <input id="mobileNumber" name="mobileNumber" type="tel" placeholder="Please enter mobile number" maxlength="10" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class='col-md-6'>
+                                    <div class="form-group">
+                                        <label for="emailId">*Email ID</label>
+                                        <input id="emailId" name="emailId" type="email" placeholder="Please enter email id" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>                                                                 
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Save Address</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                
+                $('.panel-collapse').on('shown.bs.collapse', function () {
+                    $(this).siblings(".panel-heading").find("a").addClass("collapsed");
+                });
+                
+                $('.panel-collapse').on('hidden.bs.collapse', function () {
+                    $(this).siblings(".panel-heading").find("a").removeClass("collapsed");
+                });
+            });
+        </script>
+    </body>
+</html>
