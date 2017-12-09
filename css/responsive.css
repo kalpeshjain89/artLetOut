@@ -12,6 +12,24 @@
     .artBrickWrapper .col-md-3 + .col-md-3{margin-top:20px;}
 
     .artDetailsContent .artTitle{margin-top:15px;}
+           
+    .cartMobile .cartItems .row + .row{
+        margin-top:10px;
+        padding-top:10px;
+        border-top:2px solid #ccc;
+    }
+    
+    .cartMobile .input-group{width:100px;}
+    
+    .cartMobile .form-control{padding:6px; height:30px}
+
+    .cartMobile .btn{
+        padding: 3px 12px;
+        font-size: 16px;
+        font-weight: bold;
+        display:block;
+        width:100%;
+    }
     
     .socialIconsWrapper{margin:0 auto 10px; text-align:center;}
     
