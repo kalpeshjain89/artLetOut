@@ -117,10 +117,10 @@ table caption {
 
 .artBrickWrapper .artBrick .panel-body a{display:inline-block;}
 
-.artBrickWrapper .artBrick .panel-body img{
+/*.artBrickWrapper .artBrick .panel-body img{
     width:200px;
     height:200px;
-}
+}*/
 
 .artBrickWrapper .artBrick .artDetails .artSize{
     margin-top:5px;
@@ -213,9 +213,11 @@ table caption {
     font-weight: bold;
 }
 
-.confirmOrderPage h1{font-size:26px;}
+.confirmOrderPage .alert-info h1, 
+.myOrdersPage .alert-info h1{font-size:26px;}
 
-.confirmOrderPage .panel-primary > .panel-heading a{
+.confirmOrderPage .panel-primary > .panel-heading a,
+.myOrdersPage .panel-primary > .panel-heading a{
     color:#fff; 
     display:block;
     padding-left:30px;
@@ -223,9 +225,12 @@ table caption {
     background-size:20px;
 }
 
-.confirmOrderPage .panel-primary > .panel-heading a.collapsed{
+.confirmOrderPage .panel-primary > .panel-heading a.collapsed, 
+.myOrdersPage .panel-primary > .panel-heading a.collapsed{
     background:url(../images/icons/collapse.png) no-repeat left center;
     background-size:20px;
 }
 
 .confirmOrderPage .addressDetails li{width:50%; word-wrap: break-word;}
+
+.myOrdersPage .orderItemInfo > div div{font-size:16px;}

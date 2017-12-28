@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Confirm Order - Art Let Out</title>
+        <title>My Orders - Art Let Out</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />        
     </head>
-    <body class="confirmOrderPage">
+    <body class="myOrdersPage">
         <header>
             <a href="#content" class="sr-only">Skip to main content</a>
             <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,59 +41,49 @@
         <div class="content" role='main' id="content">             
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">                        
+                    <div class="col-md-12"> 
                         <div class="alert alert-info">
-                            <h1><strong>Confirm your order</strong></h1>
-                        </div>
-                    </div>
-                    <div class="col-md-12">                        
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h1>
-                                    <a data-toggle="collapse" href="#addressPanel" class="collapsed">Delivery Address</a>
-                                </h1>
-                            </div>
-                            <div id="addressPanel" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="clearfix addressDetails">
-                                                <li class="pull-left"><strong>Name:</strong></li>
-                                                <li class="pull-left"><strong>Madhu Gone</strong></li>
-                                                <li class="pull-left"><strong>Building:</strong></li>
-                                                <li class="pull-left">Sai Samruddhi Building, C-23,</li>
-                                                <li class="pull-left"><strong>Landmark:</strong></li>
-                                                <li class="pull-left">Near Worli Police Station,</li>
-                                                <li class="pull-left"><strong>City:</strong></li>
-                                                <li class="pull-left">Mumbai</li>
-                                                <li class="pull-left"><strong>Pincode:</strong></li>
-                                                <li class="pull-left">400 003</li>
-                                                <li class="pull-left"><strong>State:</strong></li>
-                                                <li class="pull-left">Maharashtra</li>
-                                                <li class="pull-left"><strong>Contact Number:</strong></li>
-                                                <li class="pull-left">+91 1234567889</li>
-                                                <li class="pull-left"><strong>Email:</strong></li>
-                                                <li class="pull-left">madhu.gone@gmail.com</li>
-                                            </ul>                                                
-                                        </div>
-                                        <div class="col-md-12 marginT15">                        
-                                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAddressModal">Add New Address</button>
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
+                            <h1><strong>My Orders</strong></h1>
                         </div>
                         <div class="panel panel-primary marginT15">
-                            <div class="panel-heading">
-                                <h1>
-                                    <a data-toggle="collapse" href="#orderSummaryPanel">Order Summary</a>
-                                </h1>
+                            <div class="panel-heading orderItemInfo">
+                                <h2>
+                                    <a data-toggle="collapse" href="#myOrdersPanel">Order ID: 23</a>
+                                </h2>
+                                <div class='clearfix marginT10'>
+                                    <div class='pull-left'>Placed on: 12/7/2017 6:37:35 AM</div>                                    
+                                    <div class='pull-right'>Order Status: Out for delivery</div>
+                                </div>
+                                <div class='clearfix'>
+                                    <div class='pull-left'>Total Amount: Rs. 110000/-</div>                                    
+                                    <div class='pull-right'>Expected delivery date: 12/7/2017</div>                                    
+                                </div>
                             </div>
-                            <div id="orderSummaryPanel" class="panel-collapse collapse">
+                            <div id="myOrdersPanel" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h3>Shipping Address</h3>
+                                            <span class='block marginT10'>Sai Samruddhi Building, C-23,</span>
+                                            <span class='block'>Near Worli Police Station,</span>
+                                            <span class='block'>Mumbai 400 003</span>
+                                            <span class='block marginT5'>Contact Number: +91 1234567889</span>
+                                            <span class='block'>Email: madhu.gone@gmail.com</span>
+                                        </div>
+                                        <div class="col-md-4 mobileMarginT20">
+                                            <h3>Payment Details</h3>
+                                            <div class='marginT10'>Amount Paid: <strong>Rs. 110000/-</strong></div>
+                                            <div>Price: <strong>Rs. 110000/-</strong></div>
+                                            <div>Discount: <strong>NA</strong></div>
+                                        </div>                                            
+                                        <div class="col-md-4 mobileMarginT20">
+                                            <h3>Payment Mode</h3>
+                                            <div class='marginT10'>Cash on Delivery (COD)</div>
+                                        </div>
+                                    </div>
                                     <div class='cartDesktop hidden-xs'> 
                                         <div class="row">
-                                            <div class="col-md-12 clearfix">
+                                            <div class="col-md-12 clearfix marginT15">
                                                 <table class="table table-bordered table-striped">
                                                     <thead>
                                                         <tr>
@@ -140,16 +130,6 @@
                                                             <td>Rs. 55000/-</td>
                                                         </tr>
                                                     </tbody>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <td colspan="6" class="text-right">
-                                                                <strong>Grand Total</strong>
-                                                            </td>
-                                                            <td>
-                                                                <strong>Rs. 105000/-</strong>
-                                                            </td>
-                                                        </tr>
-                                                    </tfoot>
                                                 </table>
                                             </div>
                                         </div>                                    
@@ -191,34 +171,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-primary marginT15">
-                            <div class="panel-heading">
-                                <h1>
-                                    <a data-toggle="collapse" href="#paymentPanel">Payment Details</a>
-                                </h1>
-                            </div>
-                            <div id="paymentPanel" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div>Cash on Delivery (COD)</div>
-                                    <div class="marginT15">
-                                        <button class="btn btn-success" type="button">Place Order</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div> 
                     <div class="col-md-12 hidden">                        
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h1>Your Cart is empty!</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class='row'>                                    
-                                    <div class="col-md-12">                                        
-                                        <div>Visit our <a href="index.html">home page</a> to continue shopping.</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="alert alert-danger">
+                            <div><strong>Oops!</strong> You don't have any orders as of now.
+                            Visit our <a href="index.html">home page</a> to continue shopping.</div>
                         </div>
                     </div> 
                 </div>
@@ -278,81 +235,6 @@
                 </div>
             </div>
         </footer> 
-        <!-- Add another Address Modal -->
-        <div class="modal fade" id="addAddressModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modalTitle">Add New Address</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form id="addNewAddressForm" class="signUpForm">
-                            <div class='row'>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="name">*Name</label>
-                                        <input id="name" name="name" type="text" placeholder="Please enter name" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="address">*Address</label>
-                                        <input id="address" name="address" type="text" placeholder="Please enter address" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="landmark">*Landmark</label>
-                                        <input id="landmark" name="landmark" type="text" placeholder="Please enter landmark" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="pincode">*Pincode</label>
-                                        <input id="pincode" name="pincode" type="tel" placeholder="Please confirm pincode" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="city">*City</label>
-                                        <input id="city" name="city" type="text" placeholder="Please enter city" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="state">*State</label>
-                                        <input id="state" name="state" type="text" placeholder="Please confirm state" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='row'>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="mobileNumber">*Mobile Number</label>
-                                        <input id="mobileNumber" name="mobileNumber" type="tel" placeholder="Please enter mobile number" maxlength="10" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class='col-md-6'>
-                                    <div class="form-group">
-                                        <label for="emailId">*Email ID</label>
-                                        <input id="emailId" name="emailId" type="email" placeholder="Please enter email id" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>                                                                 
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Save Address</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script>
