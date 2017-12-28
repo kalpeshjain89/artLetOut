@@ -13,7 +13,8 @@
 
     .artDetailsContent .artTitle{margin-top:15px;}
            
-    .cartMobile .cartItems .row + .row{
+    .cartMobile .cartItems .row + .row,
+    .myOrdersPage .cartMobile .cartItems .row:first-child{
         margin-top:10px;
         padding-top:10px;
         border-top:2px solid #ccc;
@@ -30,6 +31,8 @@
         display:block;
         width:100%;
     }
+    
+    .myOrdersPage .orderItemInfo > div div{float:none !important;}
     
     .socialIconsWrapper{margin:0 auto 10px; text-align:center;}
     
