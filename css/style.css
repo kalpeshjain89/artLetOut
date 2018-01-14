@@ -54,7 +54,8 @@ footer {
 .loader{
     position: fixed;    
     z-index: 125;
-    background: #000;
+    background: #000 url('../images/icons/loading.gif') no-repeat center center;
+    background-size:35px 35px;
     top: 0;
     right:0;
     bottom:0;
@@ -117,10 +118,10 @@ table caption {
 
 .artBrickWrapper .artBrick .panel-body a{display:inline-block;}
 
-/*.artBrickWrapper .artBrick .panel-body img{
+.artBrickWrapper .artBrick .panel-body img{
     width:200px;
     height:200px;
-}*/
+}
 
 .artBrickWrapper .artBrick .artDetails .artSize{
     margin-top:5px;
@@ -234,3 +235,9 @@ table caption {
 .confirmOrderPage .addressDetails li{width:50%; word-wrap: break-word;}
 
 .myOrdersPage .orderItemInfo > div div{font-size:16px;}
+
+.list li{
+    list-style-type: disc;
+    margin-top:10px;
+    margin-left:20px;
+}
