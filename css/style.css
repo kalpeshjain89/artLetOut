@@ -254,6 +254,12 @@ table caption {
 
 .confirmOrderPage .addressDetails a span{display:block;}
 
+.confirmOrderPage .addressDetails a span:first-child{
+    font-size:20px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
 .myOrdersPage .orderItemInfo > div div{font-size:16px;}
 
 .list li{
