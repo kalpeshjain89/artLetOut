@@ -56,25 +56,49 @@
                             <div id="addressPanel" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="clearfix addressDetails">
-                                                <li class="pull-left"><strong>Name:</strong></li>
-                                                <li class="pull-left"><strong>Madhu Gone</strong></li>
-                                                <li class="pull-left"><strong>Building:</strong></li>
-                                                <li class="pull-left">Sai Samruddhi Building, C-23,</li>
-                                                <li class="pull-left"><strong>Landmark:</strong></li>
-                                                <li class="pull-left">Near Worli Police Station,</li>
-                                                <li class="pull-left"><strong>City:</strong></li>
-                                                <li class="pull-left">Mumbai</li>
-                                                <li class="pull-left"><strong>Pincode:</strong></li>
-                                                <li class="pull-left">400 003</li>
-                                                <li class="pull-left"><strong>State:</strong></li>
-                                                <li class="pull-left">Maharashtra</li>
-                                                <li class="pull-left"><strong>Contact Number:</strong></li>
-                                                <li class="pull-left">+91 1234567889</li>
-                                                <li class="pull-left"><strong>Email:</strong></li>
-                                                <li class="pull-left">madhu.gone@gmail.com</li>
-                                            </ul>                                                
+                                        <div class="col-md-3 addressDetails">
+                                            <a href="javascript:;" class="clearfix">
+                                                <span><strong>Madhu Gone</strong></span>
+                                                <span>Sai Samruddhi Building, C-23,</span>
+                                                <span>Near Worli Police Station,</span>
+                                                <span>Mumbai 400 003</span>
+                                                <span>Maharashtra</span>
+                                                <span><strong>+91 1234567889</strong></span>
+                                                <span><strong>madhu.gone@gmail.com</strong></span>
+                                            </a>                                                
+                                        </div>
+                                        <div class="col-md-3 addressDetails">
+                                            <a href="javascript:;" class="clearfix">
+                                                <span><strong>Madhu Gone</strong></span>
+                                                <span>Sai Samruddhi Building, C-23,</span>
+                                                <span>Near Worli Police Station,</span>
+                                                <span>Mumbai 400 003</span>
+                                                <span>Maharashtra</span>
+                                                <span><strong>+91 1234567889</strong></span>
+                                                <span><strong>madhu.gone@gmail.com</strong></span>
+                                            </a>                                                
+                                        </div>
+                                        <div class="col-md-3 addressDetails">
+                                            <a href="javascript:;" class="clearfix">
+                                                <span><strong>Madhu Gone</strong></span>
+                                                <span>Sai Samruddhi Building, C-23,</span>
+                                                <span>Near Worli Police Station,</span>
+                                                <span>Mumbai 400 003</span>
+                                                <span>Maharashtra</span>
+                                                <span><strong>+91 1234567889</strong></span>
+                                                <span><strong>madhu.gone@gmail.com</strong></span>
+                                            </a>                                                
+                                        </div>
+                                        <div class="col-md-3 addressDetails active">
+                                            <a href="javascript:;" class="clearfix">
+                                                <span><strong>Madhu Gone</strong></span>
+                                                <span>Sai Samruddhi Building, C-23,</span>
+                                                <span>Near Worli Police Station,</span>
+                                                <span>Mumbai 400 003</span>
+                                                <span>Maharashtra</span>
+                                                <span><strong>+91 1234567889</strong></span>
+                                                <span><strong>madhu.gone@gmail.com</strong></span>
+                                            </a>                                                
                                         </div>
                                         <div class="col-md-12 marginT15">                        
                                             <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAddressModal">Add New Address</button>
@@ -364,6 +388,11 @@
                 
                 $('.panel-collapse').on('hidden.bs.collapse', function () {
                     $(this).siblings(".panel-heading").find("a").removeClass("collapsed");
+                });
+                
+                $('.addressDetails a').on('click', function(){
+                    $('.addressDetails a').parent().removeClass('active'); 
+                    $(this).parent().addClass('active');
                 });
             });
         </script>
