@@ -232,7 +232,27 @@ table caption {
     background-size:20px;
 }
 
-.confirmOrderPage .addressDetails li{width:50%; word-wrap: break-word;}
+.confirmOrderPage .addressDetails a{
+    border:2px solid #ccc;
+    color:#333;
+    display:inline-block;
+    padding:10px 10px;
+    text-decoration:none;
+    min-height: 220px;
+    width:100%;
+}
+
+.confirmOrderPage .addressDetails.active a:after{
+    content: " ";
+    background: url('../images/icons/check-mark.png') no-repeat center center; 
+    background-size:25px;
+    height:25px;
+    display: block;    
+    margin-top:10px;
+    text-align:center;
+}
+
+.confirmOrderPage .addressDetails a span{display:block;}
 
 .myOrdersPage .orderItemInfo > div div{font-size:16px;}
 

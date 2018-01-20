@@ -32,6 +32,8 @@
         width:100%;
     }
     
+    .confirmOrderPage .addressDetails + .addressDetails{margin-top:15px;}
+    
     .myOrdersPage .orderItemInfo > div div{float:none !important;}
     
     .socialIconsWrapper{margin:0 auto 10px; text-align:center;}
